@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 30px; /* Margin-like spacing between cards */
+}
+
+.plan-card {
+        border: 2px solid blue;
+    width: 250px;
+    background: white;
+    padding: 30px; /* Padding inside each card */
+    margin: 10px; /* Margin around the card */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+    transform: scale(1.05);
+    border: 2px solid blue;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: blue;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-card {
+        width: 90%;
+        margin: 15px 0;
+        padding: 20px;
+    }
+}
